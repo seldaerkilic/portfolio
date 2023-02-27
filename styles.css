@@ -13,7 +13,13 @@ html {
     font-size: 125%;
 }
 
-
+a {
+    color: #e1c7b8;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
 
 body {
     background-color: #14303f;
@@ -43,6 +49,16 @@ h1 {
 p {
     text-align: center;
     
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer p {
