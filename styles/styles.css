@@ -229,3 +229,25 @@ html {
 html {
   font-size: 125%;
 }
+
+body {
+  background-color: #9baebc;
+  width: 1200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  width: 85%;
+}
