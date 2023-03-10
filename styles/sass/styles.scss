@@ -11,22 +11,31 @@ div.wrapper{
 section.about {
     padding: 40px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: $dark;
+    .paragraphContainer {
+        width: 60%;
+    }
+    .avatar {
+        margin: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     h2 {
         font-family: $roboto;
         font-size: 1.5rem;
     }
     p {
-        width: 70%;
         text-align: center;
         font-size: 0.8rem;
     }
     img{
-        width: 170px;
-        height: 150px;
+        width: 220px;
+        height: 200px;
     }
 }
 
@@ -47,9 +56,10 @@ section.skills {
     .logoContainer {
         display: flex;
         flex-direction: row;
+        // justify-content: space-between;
         flex-wrap: wrap;
-        width: 80%;
         padding: 30px;
+        width: 70%;
         div {
             min-width: 25%;
             height: 100px;
@@ -73,6 +83,10 @@ section.projects {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        h3 {
+            font-family: $roboto;
+            font-size: 1.2rem;
+        }
         ul {
             display: flex;
             flex-direction: row;
@@ -114,4 +128,50 @@ section.projects {
                 margin: 0 10px;
             }
         }
+}
+
+section.contact {
+    color: $dark;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+        text-align: left;
+        line-height: 1.5rem;
+        font-size: 0.8rem;
+        padding: 20px;
+        margin: 0;
+    }
+    h3 {
+        font-size: 1.2rem;
+        font-family: $roboto;
+    }
+    .flexInfo {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+
+    }
+    .socials {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        i {
+            width: 60px;
+            height: 60px;
+        }
+    }
+    
+}
+
+
+a:hover,
+button:hover {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
 }

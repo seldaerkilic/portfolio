@@ -233,6 +233,8 @@ html {
 body {
   background-color: #9baebc;
   font-family: "Lora", serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
@@ -251,7 +253,7 @@ img {
 
 button {
   background-color: #6b5463;
-  color: white;
+  color: #9baebc;
   font-size: 0.8rem;
   border: none;
   border-radius: 10px;
@@ -287,7 +289,7 @@ header .wrapper {
   height: 70%;
 }
 header .wrapper nav {
-  width: 70%;
+  width: 100%;
 }
 header .wrapper nav ul {
   display: -webkit-box;
@@ -328,12 +330,9 @@ header .wrapper aside h1 {
   text-align: center;
 }
 
-div.wrapper {
-  width: 100%;
-}
-
-section.about {
-  padding: 40px;
+footer {
+  background-color: #14303f;
+  color: #9baebc;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,20 +346,65 @@ section.about {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: small;
+  text-align: center;
+}
+footer a {
+  color: #9baebc;
+  text-decoration: underline;
+}
+
+div.wrapper {
+  width: 100%;
+}
+
+section.about {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #14303f;
+}
+section.about .paragraphContainer {
+  width: 60%;
+}
+section.about .avatar {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 section.about h2 {
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
 }
 section.about p {
-  width: 70%;
   text-align: center;
   font-size: 0.8rem;
 }
 section.about img {
-  width: 170px;
-  height: 150px;
+  width: 220px;
+  height: 200px;
 }
 
 section.skills {
@@ -395,8 +439,8 @@ section.skills .logoContainer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 80%;
   padding: 30px;
+  width: 70%;
 }
 section.skills .logoContainer div {
   min-width: 25%;
@@ -428,6 +472,10 @@ section.projects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+section.projects h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
 }
 section.projects ul {
   display: -webkit-box;
@@ -488,4 +536,70 @@ section.projects .projectCard button {
   width: 80px;
   font-size: 0.6rem;
   margin: 0 10px;
+}
+
+section.contact {
+  color: #14303f;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.contact p {
+  text-align: left;
+  line-height: 1.5rem;
+  font-size: 0.8rem;
+  padding: 20px;
+  margin: 0;
+}
+section.contact h3 {
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
+section.contact .flexInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 60%;
+}
+section.contact .socials {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+section.contact .socials i {
+  width: 60px;
+  height: 60px;
+}
+
+a:hover,
+button:hover {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
