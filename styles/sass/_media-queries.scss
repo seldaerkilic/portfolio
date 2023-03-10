@@ -1,3 +1,90 @@
 @use 'variables' as *;
 @use 'setup';
 
+// max-width: 1090px
+@media (max-width: 1090px) {
+    section.projects .wrapper {
+    .projectCard {
+        margin: 20px 0;
+    }
+        }
+}
+
+// max-width: 760px
+@media (max-width: 760px) {
+    section.skills .wrapper {
+    .logoContainer {
+            div {
+                width: 30%;
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+// max-width: 600px
+@media (max-width: 600px) {
+    // nav hamburger menu
+
+    section.about .wrapper {
+        padding: 20px 0;
+        flex-direction: column;
+    }
+
+    section.skills .wrapper {
+    .logoContainer {
+        // width: 100%;
+        justify-content: space-between;
+        padding: 20px 0;
+        div {
+            width: 25%;
+            margin-left: 30px;
+            display: block;
+        }
+    }
+    }
+
+    section.projects .wrapper {
+        width: 100%;
+        ul {
+            width: 100%;
+            li {
+                margin: 0 20px;
+            }
+        }
+    }
+
+    section.contact .wrapper {
+        padding: 20px 0;
+        .flexInfo {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ul {
+                flex-direction: row;
+            }
+            p{
+                text-align: center;
+                padding: 0 0 20px 0;
+            }
+        }
+    }
+}
+
+// max-width: 375px
+@media (max-width: 375px) {
+    header {
+        height: 60vh;
+    }
+    section.projects .wrapper {
+    .projectCard {
+        .infoBox{
+            button {
+                    margin: 5px;
+                }
+        }
+        
+    }
+        }
+}

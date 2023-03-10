@@ -2,7 +2,9 @@
 @use 'setup';
 
 footer {
+    width: 100%;
     background-color: $dark;
+    background-size: cover;
     color: $light;
     display: flex;
     flex-direction: column;

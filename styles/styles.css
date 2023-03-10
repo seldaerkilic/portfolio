@@ -263,7 +263,7 @@ button {
 }
 
 .wrapper {
-  width: 85%;
+  width: 90%;
 }
 
 header {
@@ -289,19 +289,17 @@ header .wrapper {
   height: 70%;
 }
 header .wrapper nav {
-  width: 100%;
+  width: 80%;
 }
 header .wrapper nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
   font-family: "Roboto Mono", monospace;
   font-size: 1.3rem;
   padding: 0;
@@ -331,7 +329,9 @@ header .wrapper aside h1 {
 }
 
 footer {
+  width: 100%;
   background-color: #14303f;
+  background-size: cover;
   color: #9baebc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -354,19 +354,99 @@ footer a {
   text-decoration: underline;
 }
 
-div.wrapper {
-  width: 100%;
+@media (max-width: 1090px) {
+  section.projects .wrapper .projectCard {
+    margin: 20px 0;
+  }
 }
-
+@media (max-width: 760px) {
+  section.skills .wrapper .logoContainer div {
+    width: 30%;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 600px) {
+  section.about .wrapper {
+    padding: 20px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.skills .wrapper .logoContainer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 20px 0;
+  }
+  section.skills .wrapper .logoContainer div {
+    width: 25%;
+    margin-left: 30px;
+    display: block;
+  }
+  section.projects .wrapper {
+    width: 100%;
+  }
+  section.projects .wrapper ul {
+    width: 100%;
+  }
+  section.projects .wrapper ul li {
+    margin: 0 20px;
+  }
+  section.contact .wrapper {
+    padding: 20px 0;
+  }
+  section.contact .wrapper .flexInfo {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.contact .wrapper .flexInfo ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  section.contact .wrapper .flexInfo p {
+    text-align: center;
+    padding: 0 0 20px 0;
+  }
+}
+@media (max-width: 375px) {
+  header {
+    height: 60vh;
+  }
+  section.projects .wrapper .projectCard .infoBox button {
+    margin: 5px;
+  }
+}
 section.about {
-  padding: 40px;
+  width: 100%;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about .wrapper {
+  padding: 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -375,10 +455,7 @@ section.about {
           align-items: center;
   color: #14303f;
 }
-section.about .paragraphContainer {
-  width: 60%;
-}
-section.about .avatar {
+section.about .wrapper .avatar {
   margin: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,23 +471,25 @@ section.about .avatar {
       -ms-flex-align: center;
           align-items: center;
 }
-section.about h2 {
+section.about .wrapper h2 {
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
 }
-section.about p {
+section.about .wrapper p {
   text-align: center;
   font-size: 0.8rem;
 }
-section.about img {
+section.about .wrapper img {
   width: 220px;
   height: 200px;
 }
 
-section.skills {
+section.skills .wrapper {
+  width: 100%;
   background-color: #14303f;
+  background-size: cover;
   color: #9baebc;
-  padding: 40px;
+  padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,11 +504,11 @@ section.skills {
       -ms-flex-align: center;
           align-items: center;
 }
-section.skills h3 {
+section.skills .wrapper h3 {
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
 }
-section.skills .logoContainer {
+section.skills .wrapper .logoContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,25 +519,40 @@ section.skills .logoContainer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 30px;
-  width: 70%;
+  width: 80%;
 }
-section.skills .logoContainer div {
-  min-width: 25%;
+section.skills .wrapper .logoContainer div {
+  width: 20%;
   height: 100px;
 }
-section.skills .logoContainer i {
+section.skills .wrapper .logoContainer i {
   width: 80px;
   height: 80px;
 }
-section.skills .logoContainer p {
+section.skills .wrapper .logoContainer p {
   font-size: 0.8rem;
   font-style: italic;
 }
 
 section.projects {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #677a86;
+  background-size: cover;
+}
+
+section.projects .wrapper {
   color: #14303f;
-  padding: 40px;
+  padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -473,11 +567,11 @@ section.projects {
       -ms-flex-align: center;
           align-items: center;
 }
-section.projects h3 {
+section.projects .wrapper h3 {
   font-family: "Roboto Mono", monospace;
   font-size: 1.2rem;
 }
-section.projects ul {
+section.projects .wrapper ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,14 +590,14 @@ section.projects ul {
   width: 90%;
   padding: 0;
 }
-section.projects ul li {
+section.projects .wrapper ul li {
   min-width: 30%;
   padding: 10px;
   margin: 20px;
   background-color: rgb(197, 197, 197);
   border-radius: 5px;
 }
-section.projects .projectCard {
+section.projects .wrapper .projectCard {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -519,19 +613,19 @@ section.projects .projectCard {
           align-items: center;
   width: 285px;
 }
-section.projects .projectCard img.projectView {
+section.projects .wrapper .projectCard img.projectView {
   width: 95%;
   border-radius: 5px;
 }
-section.projects .projectCard h4 {
+section.projects .wrapper .projectCard h4 {
   font-size: 0.9rem;
 }
-section.projects .projectCard .infoBox {
+section.projects .wrapper .projectCard .infoBox {
   margin: 0 auto;
   text-align: center;
   font-size: 0.7rem;
 }
-section.projects .projectCard button {
+section.projects .wrapper .projectCard button {
   height: 30px;
   width: 80px;
   font-size: 0.6rem;
@@ -539,8 +633,21 @@ section.projects .projectCard button {
 }
 
 section.contact {
+  width: 100%;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .wrapper {
   color: #14303f;
-  padding: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -555,28 +662,24 @@ section.contact {
       -ms-flex-align: center;
           align-items: center;
 }
-section.contact p {
+section.contact .wrapper p {
   text-align: left;
   line-height: 1.5rem;
   font-size: 0.8rem;
   padding: 20px;
   margin: 0;
 }
-section.contact h3 {
+section.contact .wrapper h3 {
   font-size: 1.2rem;
   font-family: "Roboto Mono", monospace;
 }
-section.contact .flexInfo {
+section.contact .wrapper .flexInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 60%;
+  width: 80%;
 }
-section.contact .socials {
+section.contact .wrapper .socials {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,7 +695,7 @@ section.contact .socials {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-section.contact .socials i {
+section.contact .wrapper .socials i {
   width: 60px;
   height: 60px;
 }

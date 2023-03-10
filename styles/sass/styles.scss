@@ -5,19 +5,20 @@
 @use 'media-queries';
 
 
-div.wrapper{
+
+section.about{
     width: 100%;
-}
-section.about {
-    padding: 40px;
+    padding: 20px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+section.about .wrapper{
+    padding: 40px 0;
+    display: flex;
     justify-content: center;
     align-items: center;
     color: $dark;
-    .paragraphContainer {
-        width: 60%;
-    }
     .avatar {
         margin: 0 20px;
         display: flex;
@@ -39,10 +40,12 @@ section.about {
     }
 }
 
-section.skills {
+section.skills .wrapper{
+    width: 100%;
     background-color: $dark;
+    background-size: cover;
     color: $light;
-    padding: 40px;
+    padding: 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,12 +59,11 @@ section.skills {
     .logoContainer {
         display: flex;
         flex-direction: row;
-        // justify-content: space-between;
         flex-wrap: wrap;
         padding: 30px;
-        width: 70%;
+        width: 80%;
         div {
-            min-width: 25%;
+            width: 20%;
             height: 100px;
         }
         i {
@@ -75,10 +77,19 @@ section.skills {
     }
 }
 
-section.projects {
-        background-color: $medium;
+section.projects{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $medium;
+    background-size: cover;
+}
+section.projects .wrapper{
+
         color: $dark;
-        padding: 40px;
+        padding: 20px 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -131,8 +142,14 @@ section.projects {
 }
 
 section.contact {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.contact .wrapper{
     color: $dark;
-    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,8 +167,7 @@ section.contact {
     }
     .flexInfo {
         display: flex;
-        flex-direction: row;
-        width: 60%;
+        width: 80%;
 
     }
     .socials {
