@@ -5,4 +5,113 @@
 @use 'media-queries';
 
 
+div.wrapper{
+    width: 100%;
+}
+section.about {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $dark;
+    h2 {
+        font-family: $roboto;
+        font-size: 1.5rem;
+    }
+    p {
+        width: 70%;
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    img{
+        width: 170px;
+        height: 150px;
+    }
+}
 
+section.skills {
+    background-color: $dark;
+    color: $light;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    h3 {
+        font-family: $roboto;
+        font-size: 1.2rem;
+    }
+    
+    .logoContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        padding: 30px;
+        div {
+            min-width: 25%;
+            height: 100px;
+        }
+        i {
+            width: 80px;
+            height: 80px;
+        }
+        p {
+            font-size: 0.8rem;
+            font-style: italic;
+        }
+    }
+}
+
+section.projects {
+        background-color: $medium;
+        color: $dark;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 90%;
+            padding: 0;
+            li {
+                min-width: 30%;
+                padding: 10px;
+                margin: 20px;
+                background-color: rgb(197, 197, 197);
+                border-radius: 5px;
+            }
+        }
+        .projectCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 285px;
+            img.projectView {
+                width: 95%;
+                border-radius: 5px;
+            }
+            h4{
+                font-size: 0.9rem;
+            }
+            .infoBox {
+                margin: 0 auto;
+                text-align: center;
+                font-size: 0.7rem;
+            }
+            button {
+                height: 30px;
+                width: 80px;
+                font-size: 0.6rem;
+                margin: 0 10px;
+            }
+        }
+}

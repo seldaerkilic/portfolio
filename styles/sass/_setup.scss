@@ -17,11 +17,12 @@ html {
 
 body {
     background-color: $light;
-    width: 1200px;
+    font-family: $lora;
 }
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 li {
@@ -31,6 +32,17 @@ li {
 
 img {
     display: block;
+}
+
+button {
+    background-color: $purple;
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    width: auto;
+    height: 40px;
+    padding: 10px;
 }
 
 .wrapper {

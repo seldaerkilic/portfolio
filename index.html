@@ -17,120 +17,127 @@
 <body>
     
     <header id="header">
+        <div class="wrapper headerContainer">
         <!-- Top navigation bar -->
-        <nav class="wrapper">
-            <ul>
-                <li><a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
 
-        <!-- H1 and title -->
-        <aside class="headerInfo wrapper">
-            <h1>SELDA ERKILIC</h1>
-            <p>Frontend Web Developer</p>
-            <button type="submit">Get in touch</button>
-        </aside>
-        
+            <!-- H1 and title -->
+            <aside class="headerInfo">
+                <h1>SELDA ERKILIC</h1>
+                <p>Frontend Web Developer</p>
+                <button type="submit">Get in touch</button>
+            </aside>
+        </div>
     </header>
 
     <main>
+        <div class="wrapper">
         <!-- About section -->
-        <section class="about wrapper" id="about">
-            <img src="" alt="">
+        <section class="about" id="about">
+            <img src="./styles/assets/Avatar.png" alt="portfolio owner avatar as short-hair woman">
                 <h2>ABOUT ME</h2>
-                <p></p>
+                <p>Hello, hello, hello! I am Selda Erkilic, a Frontend Web Developer who is in love with building responsive, accessible, and user-friendly websites and web applications.</p>
+                <p>Having background in project management, international trade, and people management, I rely on time-effort-budget management as well as communication and collaboration skills. I enjoy building something from scratch as well as improve the existing products/services as part of fantastic teams. I am famous with my calm attitude and solution-orientedness.</p>
+                <p>Other than coding, I enjoy drawing comics, learning about stand-up comedy, and listening to 70s music. Not a geek, but I have my favourites😎✌️</p>
             </img>
         </section>
 
         <!-- Skills section -->
-        <section class="skills wrapper" id="skills">
+        <section class="skills" id="skills">
             <h3>SKILLS</h3>
             <div class="logoContainer">
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-html5-plain" alt="html"></i>
+                    <p>HTML</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-css3-plain" alt="css"></i>
+                    <p>CSS</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-sass-original" alt="scss"></i>
+                    <p>SCSS</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-javascript-plain" alt="javascript"></i>
+                    <p>JAVASCRIPT</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-react-original" alt="react"></i>
+                    <p>REACT</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-figma-plain" alt="figma"></i>
+                    <p>FIGMA</p>
                 </div>
                 <div>
-                    <img src="" alt="">
-                    <p></p>
+                    <i class="devicon-firebase-plain" alt="firebase"></i>
+                    <p>FIREBASE</p>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
+                
             </div>
         </section>
 
         <!-- Projects section -->
-        <section class="projects wrapper" id="projects">
+        <section class="projects" id="projects">
             <h3>PROJECTS</h3>
-            <div class="projectCard">
-                <img src="" alt="">
-                <div class="infoBox">
-                    <h4></h4>
-                    <p class="tags"></p>
-                    <p></p>
-                    <button>DEMO</button>
-                    <button>LIVE</button>
-                </div>
-            </div>
-            <div class="projectCard">
-                <img src="" alt="">
-                <div class="infoBox">
-                    <h4></h4>
-                    <p class="tags"></p>
-                    <p></p>
-                    <button>DEMO</button>
-                    <button>LIVE</button>
-                </div>
-            </div>
-            <div class="projectCard">
-                <img src="" alt="">
-                <div class="infoBox">
-                    <h4></h4>
-                    <p class="tags"></p>
-                    <p></p>
-                    <button>DEMO</button>
-                    <button>LIVE</button>
-                </div>
-            </div>
-            <div class="projectCard">
-                <img src="" alt="">
-                <div class="infoBox">
-                    <h4></h4>
-                    <p class="tags"></p>
-                    <p></p>
-                    <button>DEMO</button>
-                    <button>LIVE</button>
-                </div>
-            </div>
+            <ul>
+                <li class="projectCard">
+                    <img class="projectView" src="./styles/assets/trackmate.png" alt="interface of trackmate web application to organize tasks">
+                    <div class="infoBox">
+                        <h4>TRACKMATE</h4>
+                        <p class="tags">HTML SCSS JAVASCRIPT</p>
+                        <p>Trackmate is a firebase web application that allows user to assign a category name and color tag for the tasks. Depending on task status, app dynamically moves them and eventually removes from database.</p>
+                        <button>DEMO</button>
+                        <button>LIVE</button>
+                    </div>
+                </li>
+
+                <li class="projecrCard">
+                    <img class="projectView" src="" alt="">
+                    <div class="infoBox">
+                        <h4>COMING SOON</h4>
+                        <p class="tags">HTML SCSS JAVASCRIPT REACT</p>
+                        <p>Coming soon...</p>
+                        <button>DEMO</button>
+                        <button>LIVE</button>
+                    </div>
+                </li>
+
+                <li class="projectCard">
+                    <img class="projectView" src="" alt="">
+                    <div class="infoBox">
+                        <h4>COMING SOON</h4>
+                        <p class="tags">HTML SCSS JAVASCRIPT REACT</p>
+                        <p>Coming soon...</p>
+                        <button>DEMO</button>
+                        <button>LIVE</button>
+                    </div>
+                </li>
+
+                <!-- <li class="projectCard">
+                    <img class="projectView" src="" alt="">
+                    <div class="infoBox">
+                        <h4></h4>
+                        <p class="tags"></p>
+                        <p></p>
+                        <button>DEMO</button>
+                        <button>LIVE</button>
+                    </div>
+                </li> -->
+            </ul>
+            
         </section>
 
         <!-- Contact section -->
-        <section class="contact wrapper" id="contact">
+        <section class="contact" id="contact">
             <h4>CONTACT</h4>
             <div class="socials">
                 <img src="" alt="GitHub profile link">
@@ -140,16 +147,18 @@
             <p></p>
             <button>Get in touch</button>
         </section>
-
+        </div>
     </main>
 
     <!-- Footer section -->
     <footer>
         <div class="wrapper">
             <p>Copyright 2023 - Selda Erkilic</p>
+            <p>Image by <a href="https://www.freepik.com/free-vector/creative-flat-design-profile-icons-collection_18005942.htm#page=2&query=3d%20avatar&position=11&from_view=keyword&track=ais">Freepik</a></p>
         </div>
     </footer>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script type="module" src="./script.js"></script>
 </body>
 </html>

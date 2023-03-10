@@ -232,11 +232,12 @@ html {
 
 body {
   background-color: #9baebc;
-  width: 1200px;
+  font-family: "Lora", serif;
 }
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 li {
@@ -248,6 +249,243 @@ img {
   display: block;
 }
 
+button {
+  background-color: #6b5463;
+  color: white;
+  font-size: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  padding: 10px;
+}
+
 .wrapper {
   width: 85%;
+}
+
+header {
+  padding: 40px;
+  height: 70vh;
+  background-color: #14303f;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 70%;
+}
+header .wrapper nav {
+  width: 70%;
+}
+header .wrapper nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  padding: 0;
+  margin: 0;
+}
+header .wrapper aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9baebc;
+}
+header .wrapper aside h1 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+div.wrapper {
+  width: 100%;
+}
+
+section.about {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #14303f;
+}
+section.about h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+}
+section.about p {
+  width: 70%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+section.about img {
+  width: 170px;
+  height: 150px;
+}
+
+section.skills {
+  background-color: #14303f;
+  color: #9baebc;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.skills h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.2rem;
+}
+section.skills .logoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  padding: 30px;
+}
+section.skills .logoContainer div {
+  min-width: 25%;
+  height: 100px;
+}
+section.skills .logoContainer i {
+  width: 80px;
+  height: 80px;
+}
+section.skills .logoContainer p {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+section.projects {
+  background-color: #677a86;
+  color: #14303f;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+section.projects ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  padding: 0;
+}
+section.projects ul li {
+  min-width: 30%;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgb(197, 197, 197);
+  border-radius: 5px;
+}
+section.projects .projectCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 285px;
+}
+section.projects .projectCard img.projectView {
+  width: 95%;
+  border-radius: 5px;
+}
+section.projects .projectCard h4 {
+  font-size: 0.9rem;
+}
+section.projects .projectCard .infoBox {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.7rem;
+}
+section.projects .projectCard button {
+  height: 30px;
+  width: 80px;
+  font-size: 0.6rem;
+  margin: 0 10px;
 }
