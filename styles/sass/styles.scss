@@ -141,6 +141,14 @@ section.projects .wrapper{
         }
 }
 
+.animation {
+            background-color: $dark;
+            p{
+                color: $light;
+            }
+            transition: .5s;
+    }
+
 section.contact {
     width: 100%;
     padding: 20px;

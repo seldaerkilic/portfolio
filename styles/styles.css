@@ -304,6 +304,10 @@ header .wrapper nav ul {
   font-size: 1.3rem;
   padding: 0;
   margin: 0;
+  background-color: #677a86;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
 }
 header .wrapper aside {
   display: -webkit-box;
@@ -326,6 +330,13 @@ header .wrapper aside h1 {
   font-size: 2rem;
   letter-spacing: 10px;
   text-align: center;
+}
+header nav ul li:hover {
+  background-color: #14303f;
+  border-radius: 5px;
+}
+header nav ul li:hover a {
+  color: #9baebc;
 }
 
 footer {
@@ -630,6 +641,15 @@ section.projects .wrapper .projectCard button {
   width: 80px;
   font-size: 0.6rem;
   margin: 0 10px;
+}
+
+.animation {
+  background-color: #14303f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.animation p {
+  color: #9baebc;
 }
 
 section.contact {
