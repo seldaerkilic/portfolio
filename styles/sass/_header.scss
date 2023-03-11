@@ -23,11 +23,11 @@ header {
         font-size: 1.3rem;
         padding: 0;
         margin: 0;
-
-        background-color: $medium;
-        border: none;
-        border-radius: 5px;
-        height: 50px;
+        position: relative;
+        a{
+            position: absolute;
+            color: $medium;
+        }
     }
     aside {
         display: flex;
@@ -41,17 +41,26 @@ header {
             letter-spacing: 10px;
             text-align: center;
         }
+        h1:hover {
+            letter-spacing: 13px;
+            color: white;
+            transition: 1s;
+        }
     }
 
     }
 
     nav ul {
         li:hover {
-            background-color: $dark;
-            border-radius: 5px;
             a {
+                border-radius: 5px;
+                padding: 2px;
+                margin: 0;
+                border: 2px solid $light;
                 color: $light;
+                transition: 1s;
             }
         }
     }
 }
+

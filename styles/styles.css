@@ -304,10 +304,11 @@ header .wrapper nav ul {
   font-size: 1.3rem;
   padding: 0;
   margin: 0;
-  background-color: #677a86;
-  border: none;
-  border-radius: 5px;
-  height: 50px;
+  position: relative;
+}
+header .wrapper nav ul a {
+  position: absolute;
+  color: #677a86;
 }
 header .wrapper aside {
   display: -webkit-box;
@@ -331,12 +332,20 @@ header .wrapper aside h1 {
   letter-spacing: 10px;
   text-align: center;
 }
-header nav ul li:hover {
-  background-color: #14303f;
-  border-radius: 5px;
+header .wrapper aside h1:hover {
+  letter-spacing: 13px;
+  color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 header nav ul li:hover a {
+  border-radius: 5px;
+  padding: 2px;
+  margin: 0;
+  border: 2px solid #9baebc;
   color: #9baebc;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 footer {
@@ -716,13 +725,20 @@ section.contact .wrapper .socials {
           align-items: flex-end;
 }
 section.contact .wrapper .socials i {
+  color: #14303f;
   width: 60px;
   height: 60px;
+}
+section.contact .wrapper .socials i:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 a:hover,
 button:hover {
   color: white;
-  font-weight: bold;
   letter-spacing: 2px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
