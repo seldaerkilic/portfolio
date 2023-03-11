@@ -279,13 +279,14 @@ header .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 50vh;
 }
 header .wrapper nav {
   width: 100%;
@@ -342,8 +343,8 @@ header nav ul li:hover a {
   border-radius: 5px;
   padding: 2px;
   margin: 0;
-  border: 2px solid #9baebc;
-  color: #9baebc;
+  border: 2px solid white;
+  color: white;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -460,11 +461,22 @@ footer a {
     right: 0;
     min-height: 60vh;
   }
+  .navBar.active li a {
+    color: #14303f;
+  }
   section.skills .wrapper .logoContainer div {
     width: 30%;
     margin-left: 50px;
   }
 }
+header {
+  height: 60vh;
+}
+
+.projectCard {
+  width: 100%;
+}
+
 @media (max-width: 600px) {
   section.about .wrapper {
     padding: 20px 0;
