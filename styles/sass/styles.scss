@@ -5,6 +5,26 @@
 @use 'media-queries';
 
 
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $light;
+
+    h1 {
+        font-family: $roboto;
+        font-size: 2.5rem;
+        letter-spacing: 10px;
+        text-align: center;
+    }
+
+    h1:hover {
+        letter-spacing: 13px;
+        color: $light;
+        transition: 1s;
+    }
+}
 
 section.about{
     width: 100%;
@@ -12,27 +32,31 @@ section.about{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 section.about .wrapper{
     padding: 40px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $dark;
+    color: $light;
     .avatar {
-        margin: 0 20px;
+        margin-right: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .paragraphContainer {
+        width: 60%;
+    }
     h2 {
         font-family: $roboto;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     p {
-        text-align: center;
-        font-size: 0.8rem;
+        text-align: left;
+        font-size: 1rem;
     }
     img{
         width: 220px;
@@ -53,26 +77,31 @@ section.skills .wrapper{
     
     h3 {
         font-family: $roboto;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     
     .logoContainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 30px;
+        justify-content: center;
+        align-items: center;
         width: 80%;
         div {
-            width: 20%;
-            height: 100px;
+            padding: 10px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        i {
-            width: 80px;
-            height: 80px;
+        img {
+            width: 50px;
+            height: 50px;
         }
         p {
-            font-size: 0.8rem;
-            font-style: italic;
+            font-size: 0.9rem;
+            font-family: $roboto;
         }
     }
 }
@@ -83,11 +112,10 @@ section.projects{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $medium;
+    background-color: $dark;
     background-size: cover;
 }
 section.projects .wrapper{
-
         color: $dark;
         padding: 20px 0;
         display: flex;
@@ -96,47 +124,56 @@ section.projects .wrapper{
         align-items: center;
         h3 {
             font-family: $roboto;
-            font-size: 1.2rem;
+            color: $light;
+            font-size: 1.5rem;
         }
         ul {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 90%;
             padding: 0;
             li {
-                min-width: 30%;
                 padding: 10px;
-                margin: 20px;
-                background-color: rgb(197, 197, 197);
+                // background-color: $orangeOne;
                 border-radius: 5px;
             }
         }
         .projectCard {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            width: 285px;
+            padding: 10px;
+            margin: 30px 0;
             img.projectView {
-                width: 95%;
+                max-width: 60%;
+                max-height: 500px;
                 border-radius: 5px;
+                margin: 5px;
+                background-color: $dark;
+                border: 2px solid $orangeOne;
+                padding: 30px;
             }
             h4{
-                font-size: 0.9rem;
+                font-size: 1.2rem;
             }
             .infoBox {
-                margin: 0 auto;
-                text-align: center;
-                font-size: 0.7rem;
+                width: 40%;
+                text-align: left;
+                font-size: 1rem;
+                padding: 15px;
+                border: 3px solid $orangeOne;
+                border-radius: 5px;
+                background-color: $orangeOne;
+                max-width: 60%;
+                max-height: 500px;
             }
             button {
                 height: 30px;
                 width: 80px;
                 font-size: 0.6rem;
-                margin: 0 10px;
+                margin: 0 auto;
             }
         }
 }
@@ -157,7 +194,7 @@ section.contact {
     align-items: center;
 }
 section.contact .wrapper{
-    color: $dark;
+    color: $light;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,29 +205,31 @@ section.contact .wrapper{
         font-size: 0.8rem;
         padding: 20px;
         margin: 0;
+        font-size: 1rem;
     }
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-family: $roboto;
     }
     .flexInfo {
         display: flex;
-        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
 
     }
     .socials {
-        width: 60%;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: center;
         i {
-            color: $dark;
+            color: $light;
             width: 60px;
             height: 60px;
         }
         i:hover{
-            color: white;
+            color: $orangeOne;
             transition: 0.5s;
         }
     }
@@ -198,9 +237,13 @@ section.contact .wrapper{
 }
 
 
-a:hover,
-button:hover {
+a:hover {
     color: white;
     letter-spacing: 2px;
     transition: 1s;
+}
+button:hover {
+    background-color: $orangeOne;
+    color: $orangeTwo;
+    border: 1px solid $orangeTwo;
 }

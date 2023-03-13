@@ -18,9 +18,9 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $light;
+        background-color: $orangeOne;
         position: absolute;
-        left: -100%;
+        top: -100%;
 
         .navMenu {
             display: flex;
@@ -34,17 +34,17 @@
     }
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
-        background-color: $dark;
+        background-color: $light;
 
     }
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-        background-color: $dark;
+        background-color: $light;
 
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-        background-color: $dark;
+        background-color: $light;
 
     }
     .navMenu {
@@ -66,7 +66,7 @@
         right: 0;
         min-height: 60vh;
         li a {
-            color: $dark;
+            color: $light;
         }
     }
 
@@ -80,12 +80,11 @@
         }
     }
 }
-header {
-    height: 60vh;
-}
 
+section.projects .wrapper {
 .projectCard {
-    width: 100%;
+        width: 100%;
+    }
 }
 
 // max-width: 600px
@@ -139,9 +138,7 @@ header {
 
 // max-width: 375px
 @media (max-width: 375px) {
-    header {
-        height: 60vh;
-    }
+
     section.projects .wrapper {
     .projectCard {
         .infoBox{
