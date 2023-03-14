@@ -10,66 +10,19 @@
         }
 }
 
+@media (max-width: 850px){
+    section.projects .wrapper {
+            .projectCard {
+                .infoBox p{
+                    font-size: 0.8rem;
+                    margin: 7px 0;
+                }
+            }
+        }
+}
+
 // max-width: 760px
 @media (max-width: 760px) {
-    // nav hamburger menu
-    .navBar {
-        min-height: 70px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: $orangeOne;
-        position: absolute;
-        top: -100%;
-
-        .navMenu {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 50px;
-        }
-    }
-    .hamburger {
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-        background-color: $light;
-
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-        background-color: $light;
-
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-        background-color: $light;
-
-    }
-    .navMenu {
-        
-        top: 0;
-        gap: 0;
-        flex-direction: column;
-        
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .navItem {
-        margin: 18px 0;
-    }
-    .navBar.active {
-        left: 0;
-        top: 0;
-        right: 0;
-        min-height: 60vh;
-        li a {
-            color: $light;
-        }
-    }
-
 
     section.skills .wrapper {
     .logoContainer {
@@ -97,7 +50,6 @@ section.projects .wrapper {
 
     section.skills .wrapper {
     .logoContainer {
-        // width: 100%;
         justify-content: space-between;
         padding: 20px 0;
         div {
@@ -132,6 +84,55 @@ section.projects .wrapper {
                 text-align: center;
                 padding: 0 0 20px 0;
             }
+        }
+    }
+}
+
+@media (max-width: 500px){
+section.projects .wrapper {
+        .projectCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: static !important;
+            img.projectView {
+                    padding: 0;
+                }
+            .infoBox h4{
+                font-size: 1rem;
+                margin: 0;
+            }
+            .infoBox {
+                display: block;
+                position: static !important;
+            }
+        }
+    }
+    section.about .wrapper .paragraphContainer p,
+    section.contact .wrapper .flexInfo p{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    section.about .wrapper {
+        width: 100%;
+        .paragraphContainer {
+            width: 100%;
+            p{
+                width: 100%;
+            }
+        }
+    }
+
+    main aside {
+        h1{
+            font-size: 1.9rem;
+            padding: 5px;
+        }
+    }
+    section.about .wrapper {
+        .avatar h2 {
+            font-size: 1.5rem;
         }
     }
 }
