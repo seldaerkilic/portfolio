@@ -734,6 +734,10 @@ section.projects .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
+section.projects .wrapper p.hoverNote {
+  color: white;
+  font-size: 0.8rem;
+}
 section.projects .wrapper h3 {
   font-family: "Roboto Mono", monospace;
   color: white;
@@ -787,7 +791,7 @@ section.projects .wrapper .projectCard img.projectView {
   display: block;
 }
 section.projects .wrapper .projectCard img.tabletView {
-  max-width: 50%;
+  max-width: 40%;
 }
 section.projects .wrapper .projectCard h4 {
   font-size: 1.2rem;
@@ -805,6 +809,7 @@ section.projects .wrapper .projectCard .infoBox {
   opacity: 0.9;
   position: absolute;
   top: 0;
+  display: none;
 }
 section.projects .wrapper .projectCard button {
   height: 30px;

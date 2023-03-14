@@ -122,6 +122,10 @@ section.projects .wrapper{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        p.hoverNote {
+            color: $light;
+            font-size: 0.8rem;
+        }
         h3 {
             font-family: $roboto;
             color: $light;
@@ -159,7 +163,7 @@ section.projects .wrapper{
                 display: block;
             }
             img.tabletView {
-                max-width: 50%;
+                max-width: 40%;
             }
             h4{
                 font-size: 1.2rem;
@@ -176,7 +180,7 @@ section.projects .wrapper{
                 background-color: $orangeOne; opacity: 0.9;
                 position: absolute;
                 top: 0;
-                // display: none;
+                display: none;
             }
             button {
                 height: 30px;
