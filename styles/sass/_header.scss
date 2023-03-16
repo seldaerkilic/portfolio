@@ -54,6 +54,12 @@ header {
     
         .hamburger {
             display: block;
+            width: 45px;
+            height: 45px;
+        }
+        .hamburger.active {
+            width: 45px;
+            height: 45px;
         }
     
         .hamburger.active .bar:nth-child(2) {

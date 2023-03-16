@@ -320,6 +320,12 @@ header .wrapper .navBar .navMenu {
 }
 header .wrapper .hamburger {
   display: block;
+  width: 45px;
+  height: 45px;
+}
+header .wrapper .hamburger.active {
+  width: 45px;
+  height: 45px;
 }
 header .wrapper .hamburger.active .bar:nth-child(2) {
   opacity: 0;
