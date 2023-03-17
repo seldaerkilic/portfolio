@@ -50,3 +50,7 @@ button {
 .wrapper {
     width: 80%;
 }
+
+:focus {
+    outline: 3px solid #3d68a7;
+}

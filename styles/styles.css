@@ -267,6 +267,10 @@ button {
   width: 80%;
 }
 
+:focus {
+  outline: 3px solid #3d68a7;
+}
+
 header {
   padding: 20px;
   height: 10vh;
@@ -322,10 +326,19 @@ header .wrapper .hamburger {
   display: block;
   width: 45px;
   height: 45px;
+  position: relative;
 }
 header .wrapper .hamburger.active {
   width: 45px;
   height: 45px;
+}
+header .wrapper .hiddenButton {
+  border: none;
+  opacity: 0;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  top: 0;
 }
 header .wrapper .hamburger.active .bar:nth-child(2) {
   opacity: 0;

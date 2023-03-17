@@ -24,7 +24,7 @@
     <header id="header">
         <div class="wrapper headerContainer">
         <!-- Top navigation bar -->
-            <nav class="navBar">
+            <nav class="navBar" role="navigation" aria-label="Menu">
                 <ul class="navMenu">
                     <li class="navItem"><a class="navLink" href="#header">HOME</a></li>
                     <li class="navItem"><a class="navLink" href="#about">ABOUT</a></li>
@@ -32,11 +32,14 @@
                     <li class="navItem"><a class="navLink" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+            <!-- <div class="hamburger"> -->
+                <button aria-expanded="true" aria-controls="main-menu" class="hamburger">
+                    
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            <!-- </div> -->
         </div>
     </header>
 
