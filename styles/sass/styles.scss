@@ -191,6 +191,14 @@ section.projects .wrapper{
         }
         li:hover .infoBox {
             display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            p {
+                margin: 7px 0;
+            }
         }
 }
 
@@ -290,7 +298,6 @@ section.contact .wrapper{
         }
     }
 }
-
 
 a:hover {
     color: white;
