@@ -934,15 +934,17 @@ section.contact .wrapper .socials {
       -ms-flex-align: center;
           align-items: center;
 }
-section.contact .wrapper .socials i {
+section.contact .wrapper .socials span {
   color: white;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
 }
-section.contact .wrapper .socials i:hover {
-  color: #d8c6df;
+section.contact .wrapper .socials span:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  color: #d8c6df;
   cursor: pointer;
 }
 section.contact .wrapper .messageBox {

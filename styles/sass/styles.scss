@@ -239,14 +239,16 @@ section.contact .wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        i {
+        span {
             color: $light;
-            width: 60px;
-            height: 60px;
+            width: 80px;
+            height: 80px;
+            
         }
-        i:hover{
-            color: $orangeOne;
+        span:hover{
+            transform: scale(110%);
             transition: 0.5s;
+            color: $orangeOne;
             cursor: pointer;
         }
     }
