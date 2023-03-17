@@ -602,7 +602,7 @@ aside h1 {
   text-align: center;
 }
 aside h1:hover {
-  letter-spacing: 13px;
+  letter-spacing: 11px;
   color: white;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1028,4 +1028,7 @@ button:hover {
   color: #4d1f59;
   border: 1px solid #4d1f59;
   cursor: pointer;
+}
+button:hover span {
+  background-color: #4d1f59;
 }

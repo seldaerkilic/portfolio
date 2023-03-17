@@ -30,7 +30,11 @@ formSubmit.addEventListener('submit', () => {
 })
 
 
-// Error handling for whole page
+// Focus on the menu navigation and overlay buttons
+
+// const menuButton = document.getElementsByClassName('hamburger');
+
+// menuButton.focus();
 
 
 

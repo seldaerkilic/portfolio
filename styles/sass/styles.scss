@@ -20,7 +20,7 @@ aside {
     }
 
     h1:hover {
-        letter-spacing: 13px;
+        letter-spacing: 11px;
         color: $light;
         transition: 1s;
     }
@@ -310,4 +310,7 @@ button:hover {
     color: $orangeTwo;
     border: 1px solid $orangeTwo;
     cursor: pointer;
+    span {
+        background-color: $orangeTwo;
+    }
 }
