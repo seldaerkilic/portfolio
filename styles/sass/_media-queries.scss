@@ -12,12 +12,18 @@
 
 @media (max-width: 850px){
     section.projects .wrapper {
-            .projectCard {
-                .infoBox p{
-                    font-size: 0.8rem;
-                    margin: 7px 0;
-                }
+            ul {
+                width: 100%;
+                .projectCard {
+                        width: 100%;
+                
+                        .infoBox p {
+                            font-size: 0.8rem;
+                            margin: 7px 0;
+                        }
+                    }
             }
+            
         }
 }
 
@@ -32,24 +38,47 @@
             }
         }
     }
-        section.contact div.wrapper {
-            div.flexInfo {
+    section.contact div.wrapper {
+        div.flexInfo {
+            width: 100%;
+            div.messageBox {
+                flex-direction: column;
                 width: 100%;
-                div.messageBox {
-                    flex-direction: column;
+                p,
+                form {
                     width: 100%;
-                    p,
-                    form {
-                        width: 100%;
-                    }
                 }
             }
         }
-        section.projects .wrapper {
-            .projectCard {
-                width: 100%;
+    }
+    section.projects .wrapper {
+        .projectCard {
+            width: 100%;
+        }
+    }
+    section.projects .wrapper {
+        .projectCard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: static !important;
+
+            img.projectView {
+                padding: 0;
+            }
+
+            .infoBox h4 {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+            .infoBox {
+                display: block;
+                position: static !important;
             }
         }
+    }
 }
     
 
@@ -99,44 +128,27 @@
             }
         }
     }
+
+    section.about .wrapper .paragraphContainer,
+    section.contact .wrapper .flexInfo {
+        p {
+            width: 100%;
+        }
+    }
+
+    section.about .wrapper {
+        width: 100%;
+        div.paragraphContainer {
+            width: 90%;
+        }
+    }
+
 }
 
 @media (max-width: 500px){
-section.projects .wrapper {
-        .projectCard {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: static !important;
-            img.projectView {
-                    padding: 0;
-                }
-            .infoBox h4{
-                font-size: 1rem;
-                margin: 0;
-            }
-            .infoBox {
-                display: block;
-                position: static !important;
-            }
-        }
-    }
 
-    section.about .wrapper .paragraphContainer p,
-    section.contact .wrapper .flexInfo p{
-        width: 100%;
-        font-size: 0.8rem;
-    }
-    section.about .wrapper {
-        width: 100%;
-        .paragraphContainer {
-            width: 100%;
-            p{
-                width: 100%;
-            }
-        }
-    }
+
+    
 
     main aside {
         h1{

@@ -439,7 +439,13 @@ footer a {
   }
 }
 @media (max-width: 850px) {
-  section.projects .wrapper .projectCard .infoBox p {
+  section.projects .wrapper ul {
+    width: 100%;
+  }
+  section.projects .wrapper ul .projectCard {
+    width: 100%;
+  }
+  section.projects .wrapper ul .projectCard .infoBox p {
     font-size: 0.8rem;
     margin: 7px 0;
   }
@@ -465,6 +471,33 @@ footer a {
   }
   section.projects .wrapper .projectCard {
     width: 100%;
+  }
+  section.projects .wrapper .projectCard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: static !important;
+  }
+  section.projects .wrapper .projectCard img.projectView {
+    padding: 0;
+  }
+  section.projects .wrapper .projectCard .infoBox h4 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  section.projects .wrapper .projectCard .infoBox {
+    display: block;
+    position: static !important;
   }
 }
 @media (max-width: 600px) {
@@ -521,49 +554,18 @@ footer a {
     text-align: center;
     padding: 0 0 20px 0;
   }
-}
-@media (max-width: 500px) {
-  section.projects .wrapper .projectCard {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: static !important;
-  }
-  section.projects .wrapper .projectCard img.projectView {
-    padding: 0;
-  }
-  section.projects .wrapper .projectCard .infoBox h4 {
-    font-size: 1rem;
-    margin: 0;
-  }
-  section.projects .wrapper .projectCard .infoBox {
-    display: block;
-    position: static !important;
-  }
   section.about .wrapper .paragraphContainer p,
   section.contact .wrapper .flexInfo p {
     width: 100%;
-    font-size: 0.8rem;
   }
   section.about .wrapper {
     width: 100%;
   }
-  section.about .wrapper .paragraphContainer {
-    width: 100%;
+  section.about .wrapper div.paragraphContainer {
+    width: 90%;
   }
-  section.about .wrapper .paragraphContainer p {
-    width: 100%;
-  }
+}
+@media (max-width: 500px) {
   main aside h1 {
     font-size: 1.9rem;
     padding: 5px;
