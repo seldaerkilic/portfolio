@@ -61,6 +61,7 @@ header {
         .hamburger.active {
             width: 45px;
             height: 45px;
+            z-index: 10;
         }
         .hiddenButton {
             border: none;

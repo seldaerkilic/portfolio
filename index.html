@@ -23,6 +23,16 @@
     
     <header id="header">
         <div class="wrapper headerContainer">
+
+            <!-- <div class="hamburger"> -->
+            <button aria-expanded="true" aria-controls="main-menu" class="hamburger">
+            
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <!-- </div> -->
+
         <!-- Top navigation bar -->
             <nav class="navBar" role="navigation" aria-label="Menu">
                 <ul class="navMenu">
@@ -32,14 +42,7 @@
                     <li class="navItem"><a class="navLink" href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
-            <!-- <div class="hamburger"> -->
-                <button aria-expanded="true" aria-controls="main-menu" class="hamburger">
-                    
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </button>
-            <!-- </div> -->
+            
         </div>
     </header>
 
@@ -130,7 +133,7 @@
                     <div class="infoBox">
                         <h4>COMING SOON</h4>
                         <p class="tags">HTML SCSS JAVASCRIPT REACT API</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laudantium sed?</p>
+                        <p>This app allows users to track realtime currency prices and price history via external API. It is built with React state, props, and components.</p>
                         <a href="" target="_blank"><button>LIVE</button></a>
                         <a href="" target="_blank"><button>CODE</button></a>
                     </div>
@@ -141,7 +144,7 @@
                     <div class="infoBox">
                         <h4>COMING SOON</h4>
                         <p class="tags">HTML SCSS JAVASCRIPT REACT API</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quaerat esse? Amet, in! Natus, illo quas repellat.</p>
+                        <p>Agency-style React application. Larger-scale API and React project which will be a group project.</p>
                         <a href="" target="_blank"><button>LIVE</button></a>
                         <a href="" target="_blank"><button>CODE</button></a>
                     </div>
@@ -183,9 +186,18 @@
                         </a>
                     </li>
                 </ul>
-                <p>Thanks for visiting my page. I hope you like the projects as much as I enjoyed working on them. If you have any questions or you want to chat about coding, digital products, teamwork, or even comedy, shoot me a message. I'd love to hear from you!</p>
+                <div class="messageBox">
+                    <p>Thanks for visiting my page. I hope you like the projects as much as I enjoyed working on them. If you have any questions or you want to chat about coding, digital products, teamwork, or even comedy, shoot me a message. I'd love to hear from you!</p>
+                    <form action="https://formspree.io/f/xwkjqdgv" method="POST" class="formSubmit">
+                        <label for="email" class="sr-only">Your email</label>
+                        <input type="email" name="email" id="email" placeholder="Your email" required>
+                        <label class="sr-only" for="message">Your message</label>
+                        <textarea name="message" id="message" placeholder="Your message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
-            <a href="mailto:seldaerkilic@gmail.com"><button type="submit">Message Me!</button></a>
+            <!-- <a href="mailto:seldaerkilic@gmail.com"><button type="submit">Message Me!</button></a> -->
         </div>
         </section>
         

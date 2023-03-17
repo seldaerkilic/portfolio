@@ -32,13 +32,26 @@
             }
         }
     }
+        section.contact div.wrapper {
+            div.flexInfo {
+                width: 100%;
+                div.messageBox {
+                    flex-direction: column;
+                    width: 100%;
+                    p,
+                    form {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        section.projects .wrapper {
+            .projectCard {
+                width: 100%;
+            }
+        }
 }
-
-section.projects .wrapper {
-.projectCard {
-        width: 100%;
-    }
-}
+    
 
 // max-width: 600px
 @media (max-width: 600px) {

@@ -250,7 +250,43 @@ section.contact .wrapper{
             cursor: pointer;
         }
     }
-    
+    .messageBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        p {
+            width: 50%;
+            display: inline-block;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 50%;
+            textarea {
+                min-width: 90%;
+                min-height: 200px;
+                background-color: $orangeOne;
+                border: none;
+                margin-bottom: 5px;
+                border-radius: 5px;
+            }
+            input {
+                min-width: 90%;
+                min-height: 30px;
+                margin-bottom: 5px;
+                background-color: $orangeOne;
+                border: none;
+                border-radius: 5px;
+            }
+            textarea:placeholder,
+            input:placeholder {
+                color: $orangeOne;
+                font-size: 0.8rem;
+                padding: 5px;
+            }
+        }
+    }
 }
 
 
