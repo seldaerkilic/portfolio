@@ -496,7 +496,7 @@ footer a {
     margin: 0;
   }
   section.projects .wrapper .projectCard .infoBox {
-    display: block;
+    display: none;
     position: static !important;
   }
 }
@@ -852,8 +852,8 @@ section.projects .wrapper .projectCard button {
   font-size: 0.6rem;
   margin: 0 auto;
 }
-section.projects .wrapper .infoBox:hover,
-section.projects .wrapper .infoBox:focus-within {
+section.projects .wrapper .projectCard:hover .infoBox,
+section.projects .wrapper .projecrCard:focus-within .infoBox {
   opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,8 +870,8 @@ section.projects .wrapper .infoBox:focus-within {
           align-items: center;
   text-align: center;
 }
-section.projects .wrapper .infoBox:hover p,
-section.projects .wrapper .infoBox:focus-within p {
+section.projects .wrapper .projectCard:hover .infoBox p,
+section.projects .wrapper .projecrCard:focus-within .infoBox p {
   margin: 7px 0;
 }
 
@@ -1014,7 +1014,7 @@ section.contact .wrapper .messageBox form textarea:placeholder,
 section.contact .wrapper .messageBox form input:placeholder {
   color: #d8c6df;
   font-size: 0.8rem;
-  padding: 5px;
+  padding: 10px;
 }
 
 a:hover {
