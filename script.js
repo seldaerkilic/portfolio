@@ -21,9 +21,6 @@ const formSubmit = document.querySelector('.formSubmit');
 const inputElement = document.getElementsByName('email');
 const textElement = document.getElementsByName('message');
 
-console.log(inputElement);
-console.log(textElement);
-
 formSubmit.addEventListener('submit', () => {
     inputElement[0].value = "";
     textElement[0].value = "";

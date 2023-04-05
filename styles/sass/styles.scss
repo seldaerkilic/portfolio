@@ -163,7 +163,7 @@ section.projects .wrapper{
                 display: block;
             }
             img.tabletView {
-                max-width: 40%;
+                // min-width: 400px;
             }
             h4{
                 font-size: 1.2rem;
@@ -199,6 +199,7 @@ section.projects .wrapper{
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                transition: 5s ease-out;
                 p {
                     margin: 7px 0;
                 }
