@@ -15,7 +15,6 @@ document.querySelectorAll(".navLink").forEach(n => n.addEventListener('click', (
 }))
 
 
-
 // Cleaning inputs after form submit
 const formSubmit = document.querySelector('.formSubmit');
 const inputElement = document.getElementsByName('email');

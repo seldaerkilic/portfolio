@@ -162,8 +162,12 @@ section.projects .wrapper{
                 background-color: $dark;
                 display: block;
             }
-            img.tabletView {
-                // min-width: 400px;
+            img.mobileView {
+                max-width: 40%;
+                border-radius: 5px;
+                margin: 5px;
+                background-color: $dark;
+                display: block;
             }
             h4{
                 font-size: 1.2rem;
@@ -199,7 +203,7 @@ section.projects .wrapper{
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                transition: 5s ease-out;
+                transition: all .8s;
                 p {
                     margin: 7px 0;
                 }

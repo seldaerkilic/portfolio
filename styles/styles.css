@@ -488,7 +488,8 @@ footer a {
             align-items: center;
     position: static !important;
   }
-  section.projects .wrapper .projectCard img.projectView {
+  section.projects .wrapper .projectCard img.projectView,
+  section.projects .wrapper .projectCard img.mobileView {
     padding: 0;
   }
   section.projects .wrapper .projectCard .infoBox h4 {
@@ -825,8 +826,12 @@ section.projects .wrapper .projectCard img.projectView {
   background-color: black;
   display: block;
 }
-section.projects .wrapper .projectCard img.tabletView {
+section.projects .wrapper .projectCard img.mobileView {
   max-width: 40%;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: black;
+  display: block;
 }
 section.projects .wrapper .projectCard h4 {
   font-size: 1.2rem;
@@ -869,6 +874,8 @@ section.projects .wrapper .projecrCard:focus-within .infoBox {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 section.projects .wrapper .projectCard:hover .infoBox p,
 section.projects .wrapper .projecrCard:focus-within .infoBox p {
