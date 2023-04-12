@@ -833,6 +833,13 @@ section.projects .wrapper .projectCard img.mobileView {
   background-color: black;
   display: block;
 }
+section.projects .wrapper .projectCard img.tabletView {
+  max-width: 65%;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: black;
+  display: block;
+}
 section.projects .wrapper .projectCard h4 {
   font-size: 1.2rem;
   margin: 10px 0;

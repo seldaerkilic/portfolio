@@ -169,6 +169,13 @@ section.projects .wrapper{
                 background-color: $dark;
                 display: block;
             }
+            img.tabletView{
+                max-width: 65%;
+                border-radius: 5px;
+                margin: 5px;
+                background-color: $dark;
+                display: block;
+            }
             h4{
                 font-size: 1.2rem;
                 margin: 10px 0;
