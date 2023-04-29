@@ -29,7 +29,7 @@ formSubmit.addEventListener('submit', () => {
 
 const modeDark = document.querySelector(".mode");
 const circleDark = document.querySelector(".circle");
-const bodyDark = document.getElementsByTagName("body");
+const bodyDark = document.querySelector(".bodyDark");
 
 console.log(modeDark);
 console.log(circleDark);
@@ -41,16 +41,16 @@ modeDark.addEventListener('click', ()=>{
     bodyDark.classList.toggle(".bodyLight");
 })
 
-const modeReverse = document.querySelector(".modeLight");
-const circleReverse = document.querySelector(".circleLight")
-const bodyReverse = document.querySelector(".bodyLight");
+// const modeReverse = document.querySelector(".modeLight");
+// const circleReverse = document.querySelector(".circleLight")
+// const bodyReverse = document.querySelector(".bodyLight");
 
-console.log(modeReverse);
-console.log(circleReverse);
-console.log(bodyReverse);
+// console.log(modeReverse);
+// console.log(circleReverse);
+// console.log(bodyReverse);
 
-modeReverse.addEventListener('click', ()=>{
-    modeReverse.classList.toggle("mode");
-    circleReverse.classList.toggle(".circle");
-    bodyReverse.classList.remove("bodyLight");
-})
+// modeReverse.addEventListener('click', ()=>{
+//     modeReverse.classList.toggle("mode");
+//     circleReverse.classList.toggle(".circle");
+//     bodyReverse.classList.remove("bodyLight");
+// })
