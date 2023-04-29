@@ -38,7 +38,11 @@ console.log(bodyDark);
 modeDark.addEventListener('click', ()=>{
     modeDark.classList.toggle("modeLight");
     circleDark.classList.toggle("circleLight");
-    bodyDark.classList.toggle(".bodyLight");
+    bodyDark.classList.toggle("bodyLight");
+
+    modeDark.classList.remove("mode");
+    circleDark.classList.remove("circle");
+    bodyDark.classList.remove("bodyDark");
 })
 
 // const modeReverse = document.querySelector(".modeLight");
