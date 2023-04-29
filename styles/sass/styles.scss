@@ -367,11 +367,12 @@ div.mode{
 div.modeLight{
     background-color: $orangeOne;
     .cirleLight {
+        left: none;
             right: 10px;
         }
 }
 
-body.bodyDark{
+body.bodyLight{
     background-color: white;
     color: black;
 }
