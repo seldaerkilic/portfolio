@@ -1116,6 +1116,5 @@ div.modeLight {
   background-color: #d8c6df;
 }
 div.modeLight .cirleLight {
-  left: none;
-  right: 10px;
+  left: 60px;
 }
