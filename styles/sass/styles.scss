@@ -296,6 +296,7 @@ section.contact .wrapper{
                 border: none;
                 margin-bottom: 5px;
                 border-radius: 5px;
+                padding: 5px;
             }
             input {
                 min-width: 90%;
@@ -304,12 +305,17 @@ section.contact .wrapper{
                 background-color: $orangeOne;
                 border: none;
                 border-radius: 5px;
+                padding: 5px;
             }
-            textarea:placeholder,
-            input:placeholder {
-                color: $orangeOne;
+        }
+    }
+    .messageBox{
+        form{
+            textarea::placeholder,
+            input::placeholder {
+                margin-left: 5px;
+                color: black;
                 font-size: 0.8rem;
-                padding: 10px;
             }
         }
     }
@@ -331,4 +337,41 @@ button:focus-within {
     span {
         background-color: $orangeTwo;
     }
+}
+
+// Dark and Light Mode Style Toggle
+
+div.mode{
+    margin: 0 auto;
+    background-color: $orangeTwo;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .circle{
+        z-index: 1;
+        border: none;
+        border-radius: 20px;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 10px;
+    }
+}
+
+div.modeLight{
+    background-color: $orangeOne;
+    .cirleLight {
+            right: 10px;
+        }
+}
+
+body.bodyDark{
+    background-color: white;
+    color: black;
 }

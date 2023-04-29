@@ -1015,6 +1015,7 @@ section.contact .wrapper .messageBox form textarea {
   border: none;
   margin-bottom: 5px;
   border-radius: 5px;
+  padding: 5px;
 }
 section.contact .wrapper .messageBox form input {
   min-width: 90%;
@@ -1023,12 +1024,33 @@ section.contact .wrapper .messageBox form input {
   background-color: #d8c6df;
   border: none;
   border-radius: 5px;
+  padding: 5px;
 }
-section.contact .wrapper .messageBox form textarea:placeholder,
-section.contact .wrapper .messageBox form input:placeholder {
-  color: #d8c6df;
+section.contact .wrapper .messageBox form textarea::-webkit-input-placeholder, section.contact .wrapper .messageBox form input::-webkit-input-placeholder {
+  margin-left: 5px;
+  color: black;
   font-size: 0.8rem;
-  padding: 10px;
+}
+section.contact .wrapper .messageBox form textarea::-moz-placeholder, section.contact .wrapper .messageBox form input::-moz-placeholder {
+  margin-left: 5px;
+  color: black;
+  font-size: 0.8rem;
+}
+section.contact .wrapper .messageBox form textarea:-ms-input-placeholder, section.contact .wrapper .messageBox form input:-ms-input-placeholder {
+  margin-left: 5px;
+  color: black;
+  font-size: 0.8rem;
+}
+section.contact .wrapper .messageBox form textarea::-ms-input-placeholder, section.contact .wrapper .messageBox form input::-ms-input-placeholder {
+  margin-left: 5px;
+  color: black;
+  font-size: 0.8rem;
+}
+section.contact .wrapper .messageBox form textarea::placeholder,
+section.contact .wrapper .messageBox form input::placeholder {
+  margin-left: 5px;
+  color: black;
+  font-size: 0.8rem;
 }
 
 a:hover {
@@ -1051,4 +1073,45 @@ button:hover span,
 button:focus span,
 button:focus-within span {
   background-color: #4d1f59;
+}
+
+div.mode {
+  margin: 0 auto;
+  background-color: #4d1f59;
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+div.mode .circle {
+  z-index: 1;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+}
+
+div.modeLight {
+  background-color: #d8c6df;
+}
+div.modeLight .cirleLight {
+  right: 10px;
+}
+
+body.bodyDark {
+  background-color: white;
+  color: black;
 }
