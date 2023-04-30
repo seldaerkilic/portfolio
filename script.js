@@ -62,7 +62,10 @@ modeReverse.addEventListener('click', ()=>{
     modeReverse.classList.toggle("mode");
     circleReverse.classList.toggle(".circle");
     iconReverse.classList.toggle("lightIcon");
+    bodyReverse.classList.toggle("bodyDark")
 
     bodyReverse.classList.remove("bodyLight");
     iconLight.classList.remove("darkIcon");
+    modeReverse.classList.remove("modeLight");
+    circleReverse.classList.remove("circleLight")
 })
