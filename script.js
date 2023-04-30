@@ -36,9 +36,9 @@ modeDark.addEventListener('click', ()=>{
     circleDark.classList.toggle("circleLight");
     bodyDark.classList.toggle("bodyLight");
 
-    modeDark.classList.remove("mode");
-    circleDark.classList.remove("circle");
-    bodyDark.classList.remove("bodyDark");
+    // modeDark.classList.remove("mode");
+    // circleDark.classList.remove("circle");
+    // bodyDark.classList.remove("bodyDark");
 })
 
 const modeReverse = document.querySelector(".modeLight");
@@ -46,9 +46,9 @@ const circleReverse = document.querySelector(".circleLight")
 const bodyReverse = document.querySelector(".bodyLight");
 
 modeReverse.addEventListener('click', ()=>{
-    modeReverse.classList.toggle("mode");
-    circleReverse.classList.toggle(".circle");
-    bodyReverse.classList.toggle("bodyDark")
+    // modeReverse.classList.toggle("mode");
+    // circleReverse.classList.toggle(".circle");
+    // bodyReverse.classList.toggle("bodyDark")
 
     bodyReverse.classList.remove("bodyLight");
     modeReverse.classList.remove("modeLight");

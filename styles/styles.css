@@ -1089,7 +1089,6 @@ div.mode {
   position: relative;
 }
 div.mode .circle {
-  z-index: 0;
   border: 1px solid black;
   border-radius: 20px;
   background-color: white;
@@ -1102,7 +1101,7 @@ div.mode .circle {
 div.modeLight {
   margin: 0 auto;
   background-color: #d8c6df;
-  border: none;
+  border: 1px solid black;
   border-radius: 20px;
   width: 80px;
   height: 30px;

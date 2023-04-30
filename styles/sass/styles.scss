@@ -352,7 +352,6 @@ div.mode{
     align-items: center;
     position: relative;
     .circle{
-        z-index: 0;
         border: 1px solid $dark;
         border-radius: 20px;
         background-color: white;
@@ -366,7 +365,7 @@ div.mode{
 div.modeLight{
     margin: 0 auto;
     background-color: $orangeOne;
-    border: none;
+    border: 1px solid $dark;
     border-radius: 20px;
     width: 80px;
     height: 30px;
