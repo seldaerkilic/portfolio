@@ -962,12 +962,12 @@ section.contact .wrapper .socials {
       -ms-flex-align: center;
           align-items: center;
 }
-section.contact .wrapper .socials span.lightIcon {
+section.contact .wrapper .socials a.lightIcon span {
   color: white;
   width: 80px;
   height: 80px;
 }
-section.contact .wrapper .socials span.lightIcon:hover {
+section.contact .wrapper .socials a.lightIcon span:hover {
   -webkit-transform: scale(110%);
           transform: scale(110%);
   -webkit-transition: 0.5s;
@@ -975,12 +975,12 @@ section.contact .wrapper .socials span.lightIcon:hover {
   color: #d8c6df;
   cursor: pointer;
 }
-section.contact .wrapper .socials span.darkIcon {
+section.contact .wrapper .socials a.darkIcon span {
   color: black;
   width: 80px;
   height: 80px;
 }
-section.contact .wrapper .socials span.darkIcon:hover {
+section.contact .wrapper .socials a.darkIcon span:hover {
   -webkit-transform: scale(110%);
           transform: scale(110%);
   -webkit-transition: 0.5s;
@@ -1102,6 +1102,7 @@ div.mode {
   position: relative;
 }
 div.mode .circle {
+  z-index: 0;
   border: 1px solid black;
   border-radius: 20px;
   background-color: white;
@@ -1136,5 +1137,5 @@ div.modeLight .circleLight {
   width: 20px;
   height: 20px;
   position: absolute;
-  left: 60px;
+  left: 50px;
 }

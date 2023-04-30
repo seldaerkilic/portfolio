@@ -263,27 +263,31 @@ section.contact .wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        span.lightIcon {
-            color: $light;
-            width: 80px;
-            height: 80px;
+        a.lightIcon{
+            span {
+                color: $light;
+                width: 80px;
+                height: 80px;
+            }
+            span:hover{
+                transform: scale(110%);
+                transition: 0.5s;
+                color: $orangeOne;
+                cursor: pointer;
+            }
         }
-        span.lightIcon:hover{
-            transform: scale(110%);
-            transition: 0.5s;
-            color: $orangeOne;
-            cursor: pointer;
-        }
-        span.darkIcon{
-            color: $dark;
-            width: 80px;
-            height: 80px;
-        }
-        span.darkIcon:hover{
-            transform: scale(110%);
-            transition: 0.5s;
-            color: $orangeTwo;
-            cursor: pointer;
+        a.darkIcon{
+            span{
+                color: $dark;
+                width: 80px;
+                height: 80px;
+            }
+            span:hover{
+                transform: scale(110%);
+                transition: 0.5s;
+                color: $orangeTwo;
+                cursor: pointer;
+            }
         }
     }
     .messageBox {
@@ -363,6 +367,7 @@ div.mode{
     align-items: center;
     position: relative;
     .circle{
+        z-index: 0;
         border: 1px solid $dark;
         border-radius: 20px;
         background-color: white;
@@ -391,7 +396,7 @@ div.modeLight{
         width: 20px;
         height: 20px;
         position: absolute;
-        left: 60px;
+        left: 50px;
         }
 }
 
