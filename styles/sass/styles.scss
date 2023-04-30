@@ -263,12 +263,12 @@ section.contact .wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        span {
+        span.lightIcon {
             color: $light;
             width: 80px;
             height: 80px;
         }
-        span:hover{
+        span.lightIcon:hover{
             transform: scale(110%);
             transition: 0.5s;
             color: $orangeOne;
@@ -384,7 +384,7 @@ div.modeLight{
     justify-content: center;
     align-items: center;
     position: relative;
-    .cirleLight {
+    .circleLight {
         border: 1px solid $dark;
         border-radius: 20px;
         background-color: white;

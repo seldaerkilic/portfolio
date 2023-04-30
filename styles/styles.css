@@ -962,12 +962,12 @@ section.contact .wrapper .socials {
       -ms-flex-align: center;
           align-items: center;
 }
-section.contact .wrapper .socials span {
+section.contact .wrapper .socials span.lightIcon {
   color: white;
   width: 80px;
   height: 80px;
 }
-section.contact .wrapper .socials span:hover {
+section.contact .wrapper .socials span.lightIcon:hover {
   -webkit-transform: scale(110%);
           transform: scale(110%);
   -webkit-transition: 0.5s;
@@ -1129,7 +1129,7 @@ div.modeLight {
           align-items: center;
   position: relative;
 }
-div.modeLight .cirleLight {
+div.modeLight .circleLight {
   border: 1px solid black;
   border-radius: 20px;
   background-color: white;
