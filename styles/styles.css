@@ -1112,8 +1112,29 @@ div.mode .circle {
 }
 
 div.modeLight {
+  margin: 0 auto;
   background-color: #d8c6df;
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
 }
 div.modeLight .cirleLight {
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  position: absolute;
   left: 60px;
 }

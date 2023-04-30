@@ -30,7 +30,7 @@ formSubmit.addEventListener('submit', () => {
 const modeDark = document.querySelector(".mode");
 const circleDark = document.querySelector(".circle");
 const bodyDark = document.querySelector(".bodyDark");
-const iconLight = document.querySelector(".fa");
+const iconLight = document.querySelectorAll(".fa");
 
 console.log(modeDark);
 console.log(circleDark);
@@ -51,7 +51,7 @@ modeDark.addEventListener('click', ()=>{
 const modeReverse = document.querySelector(".modeLight");
 const circleReverse = document.querySelector(".circleLight")
 const bodyReverse = document.querySelector(".bodyLight");
-const iconReverse = document.querySelector(".darkIcon");
+const iconReverse = document.querySelectorAll(".darkIcon");
 
 console.log(modeReverse);
 console.log(circleReverse);
