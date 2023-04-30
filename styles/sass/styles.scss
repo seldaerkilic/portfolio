@@ -263,22 +263,8 @@ section.contact .wrapper{
         display: flex;
         justify-content: center;
         align-items: center;
-        a.lightIcon{
             span {
-                color: $light;
-                width: 80px;
-                height: 80px;
-            }
-            span:hover{
-                transform: scale(110%);
-                transition: 0.5s;
                 color: $orangeOne;
-                cursor: pointer;
-            }
-        }
-        a.darkIcon{
-            span{
-                color: $dark;
                 width: 80px;
                 height: 80px;
             }
@@ -288,7 +274,6 @@ section.contact .wrapper{
                 color: $orangeTwo;
                 cursor: pointer;
             }
-        }
     }
     .messageBox {
         display: flex;
@@ -358,7 +343,7 @@ button:focus-within {
 div.mode{
     margin: 0 auto;
     background-color: $orangeTwo;
-    border: none;
+    border: 1px solid $dark;
     border-radius: 20px;
     width: 80px;
     height: 30px;

@@ -30,42 +30,27 @@ formSubmit.addEventListener('submit', () => {
 const modeDark = document.querySelector(".mode");
 const circleDark = document.querySelector(".circle");
 const bodyDark = document.querySelector(".bodyDark");
-const iconLight = document.querySelectorAll(".lightIcon");
-
-console.log(modeDark);
-console.log(circleDark);
-console.log(bodyDark);
-console.log(iconLight);
 
 modeDark.addEventListener('click', ()=>{
     modeDark.classList.toggle("modeLight");
     circleDark.classList.toggle("circleLight");
     bodyDark.classList.toggle("bodyLight");
-    iconLight.classList.toggle("darkIcon");
 
     modeDark.classList.remove("mode");
     circleDark.classList.remove("circle");
     bodyDark.classList.remove("bodyDark");
-    iconLight.classList.remove("lightIcon");
 })
 
 const modeReverse = document.querySelector(".modeLight");
 const circleReverse = document.querySelector(".circleLight")
 const bodyReverse = document.querySelector(".bodyLight");
-const iconReverse = document.querySelectorAll(".darkIcon");
-
-console.log(modeReverse);
-console.log(circleReverse);
-console.log(bodyReverse);
 
 modeReverse.addEventListener('click', ()=>{
     modeReverse.classList.toggle("mode");
     circleReverse.classList.toggle(".circle");
-    iconReverse.classList.toggle("lightIcon");
     bodyReverse.classList.toggle("bodyDark")
 
     bodyReverse.classList.remove("bodyLight");
-    iconLight.classList.remove("darkIcon");
     modeReverse.classList.remove("modeLight");
     circleReverse.classList.remove("circleLight")
 })
