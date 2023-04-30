@@ -282,7 +282,6 @@ button {
 header {
   padding: 20px;
   height: 10vh;
-  background-color: black;
 }
 header .wrapper {
   display: -webkit-box;
@@ -417,9 +416,7 @@ header nav ul li:hover a {
 
 footer {
   width: 100%;
-  background-color: black;
   background-size: cover;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -602,7 +599,6 @@ aside {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
 }
 aside h1 {
   font-family: "Roboto Mono", monospace;
@@ -612,7 +608,6 @@ aside h1 {
 }
 aside h1:hover {
   letter-spacing: 11px;
-  color: white;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -643,7 +638,6 @@ section.about .wrapper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white;
 }
 section.about .wrapper .avatar {
   margin-right: 20px;
@@ -679,9 +673,7 @@ section.about .wrapper img {
 
 section.skills .wrapper {
   width: 100%;
-  background-color: black;
   background-size: cover;
-  color: white;
   padding: 40px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -757,7 +749,6 @@ section.projects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
   background-size: cover;
 }
 
@@ -921,7 +912,6 @@ section.contact {
 }
 
 section.contact .wrapper {
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1103,7 +1093,7 @@ div.mode {
 }
 div.mode .circle {
   z-index: 1;
-  border: none;
+  border: 1px solid black;
   border-radius: 20px;
   background-color: white;
   width: 20px;

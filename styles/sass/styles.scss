@@ -10,7 +10,7 @@ aside {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: $light;
+    // color: $light;
 
     h1 {
         font-family: $roboto;
@@ -21,7 +21,7 @@ aside {
 
     h1:hover {
         letter-spacing: 11px;
-        color: $light;
+        // color: $light;
         transition: 1s;
     }
 }
@@ -39,7 +39,7 @@ section.about .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $light;
+    // color: $light;
     .avatar {
         margin-right: 20px;
         display: flex;
@@ -66,9 +66,9 @@ section.about .wrapper{
 
 section.skills .wrapper{
     width: 100%;
-    background-color: $dark;
+    // background-color: $dark;
     background-size: cover;
-    color: $light;
+    // color: $light;
     padding: 40px 0;
     display: flex;
     flex-direction: column;
@@ -112,7 +112,7 @@ section.projects{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark;
+    // background-color: $dark;
     background-size: cover;
 }
 section.projects .wrapper{
@@ -234,7 +234,7 @@ section.contact {
     align-items: center;
 }
 section.contact .wrapper{
-    color: $light;
+    // color: $light;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -314,7 +314,7 @@ section.contact .wrapper{
             textarea::placeholder,
             input::placeholder {
                 margin-left: 5px;
-                color: black;
+                color: $dark;
                 font-size: 0.8rem;
             }
         }
@@ -322,7 +322,7 @@ section.contact .wrapper{
 }
 
 a:hover {
-    color: white;
+    color: $light;
     letter-spacing: 2px;
     transition: 1s;
     cursor: pointer;
@@ -354,7 +354,7 @@ div.mode{
     position: relative;
     .circle{
         z-index: 1;
-        border: none;
+        border: 1px solid $dark;
         border-radius: 20px;
         background-color: white;
         width: 20px;

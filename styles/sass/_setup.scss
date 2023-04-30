@@ -22,8 +22,8 @@ body.bodyDark {
     box-sizing: border-box;
 }
 body.bodyLight {
-    background-color: white;
-    color: black;
+    background-color: $light;
+    color: $dark;
     font-family: $lora;
     box-sizing: border-box;
 }
