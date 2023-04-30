@@ -753,7 +753,6 @@ section.projects {
 }
 
 section.projects .wrapper {
-  color: black;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -770,12 +769,10 @@ section.projects .wrapper {
           align-items: center;
 }
 section.projects .wrapper p.hoverNote {
-  color: white;
   font-size: 0.8rem;
 }
 section.projects .wrapper h3 {
   font-family: "Roboto Mono", monospace;
-  color: white;
   font-size: 1.5rem;
   text-align: center;
 }
@@ -978,6 +975,19 @@ section.contact .wrapper .socials span:hover {
   color: #d8c6df;
   cursor: pointer;
 }
+section.contact .wrapper .socials span.darkIcon {
+  color: black;
+  width: 80px;
+  height: 80px;
+}
+section.contact .wrapper .socials span.darkIcon:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #4d1f59;
+  cursor: pointer;
+}
 section.contact .wrapper .messageBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1092,7 +1102,6 @@ div.mode {
   position: relative;
 }
 div.mode .circle {
-  z-index: 1;
   border: 1px solid black;
   border-radius: 20px;
   background-color: white;
