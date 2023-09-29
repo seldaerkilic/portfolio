@@ -3,83 +3,16 @@
 
 // max-width: 1090px
 @media (max-width: 1090px) {
-    section.projects .wrapper {
-    .projectCard {
-        margin: 20px 0;
-    }
-        }
+
 }
 
 @media (max-width: 850px){
-    section.projects .wrapper {
-            ul {
-                width: 100%;
-                .projectCard {
-                        width: 100%;
-                
-                        .infoBox p {
-                            font-size: 0.8rem;
-                            margin: 7px 0;
-                        }
-                    }
-            }
-            
-        }
+
 }
 
 // max-width: 760px
 @media (max-width: 760px) {
 
-    section.skills .wrapper {
-    .logoContainer {
-            div {
-                width: 30%;
-                margin-left: 50px;
-            }
-        }
-    }
-    section.contact div.wrapper {
-        div.flexInfo {
-            width: 100%;
-            div.messageBox {
-                flex-direction: column;
-                width: 100%;
-                p,
-                form {
-                    width: 100%;
-                }
-            }
-        }
-    }
-    section.projects .wrapper {
-        .projectCard {
-            width: 100%;
-        }
-    }
-    section.projects .wrapper {
-        .projectCard {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: static !important;
-
-            img.projectView,
-            img.mobileView {
-                padding: 0;
-            }
-
-            .infoBox h4 {
-                font-size: 1rem;
-                margin: 0;
-            }
-
-            .infoBox {
-                display: none;
-                position: static !important;
-            }
-        }
-    }
 }
     
 
@@ -89,45 +22,6 @@
     section.about .wrapper {
         padding: 20px 0;
         flex-direction: column;
-    }
-
-    section.skills .wrapper {
-    .logoContainer {
-        justify-content: space-between;
-        padding: 20px 0;
-        div {
-            width: 25%;
-            margin-left: 30px;
-            display: block;
-        }
-    }
-    }
-
-    section.projects .wrapper {
-        width: 100%;
-        ul {
-            width: 100%;
-            li {
-                margin: 0 20px;
-            }
-        }
-    }
-
-    section.contact .wrapper {
-        padding: 20px 0;
-        .flexInfo {
-            width: 100%;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            ul {
-                flex-direction: row;
-            }
-            p{
-                text-align: center;
-                padding: 0 0 20px 0;
-            }
-        }
     }
 
     section.about .wrapper .paragraphContainer,
@@ -148,9 +42,6 @@
 
 @media (max-width: 500px){
 
-
-    
-
     main aside {
         h1{
             font-size: 1.9rem;
@@ -167,14 +58,4 @@
 // max-width: 375px
 @media (max-width: 375px) {
 
-    section.projects .wrapper {
-    .projectCard {
-        .infoBox{
-            button {
-                    margin: 5px;
-                }
-        }
-        
-    }
-        }
 }

@@ -15,12 +15,7 @@ html {
     font-size: 125%;
 }
 
-body.bodyDark {
-    background-color: $dark;
-    color: $light;
-    font-family: $lora;
-    box-sizing: border-box;
-}
+
 body.bodyLight {
     background-color: $light;
     color: $dark;
